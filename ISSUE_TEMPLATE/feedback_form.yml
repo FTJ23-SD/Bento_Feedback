@@ -1,0 +1,39 @@
+# --- .github/ISSUE_TEMPLATE/feedback_form.yml ---
+
+name: 📝 フィードバックを送信
+description: お弁当注文フォームに関するご意見・ご感想をお寄せください
+title: "[Feedback] "
+labels: ["feedback"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        フィードバックにご協力いただきありがとうございます！
+        どのようなことでもお気軽にご記入ください。
+
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: フィードバックの種類
+      options:
+        - 機能に関する要望
+        - デザインに関する意見
+        - 使いにくい点
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      description: 具体的な内容を詳しく教えてください。
+      placeholder: "例：〇〇のボタンが押しにくいです。もう少し大きいと助かります。"
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: 連絡先（任意）
